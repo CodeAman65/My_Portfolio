@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>Rohit Rajput — Motion Graphics &amp; Video Editor</title>
+  <meta name="description" content="High-retention motion graphics, DTC ads, and founder-led content by Rohit Rajput. Judged on views, watch time, and ROAS." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rohit Rajput — Motion Graphics &amp; Video Editor" />
+  <meta property="og:description" content="High-retention motion graphics, DTC ads, and founder-led content. Judged on metrics that matter." />
+  <meta property="og:image" content="./Gemini_Generated_Image_rideyprideypride.png" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#E1DDD3" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet (versioned to avoid browser caching) -->
+  <link rel="stylesheet" href="./style.css?v=3.8" />
+
+  <!-- Critical Grid Layouts for Skills & Services (ensures side-by-side 3-column layout) -->
+  <style>
+    .skills-grid, .services-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 24px;
+    }
+    @media (max-width: 960px) {
+      .skills-grid, .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 18px;
+      }
+    }
+    @media (max-width: 540px) {
+      .skills-grid, .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- SVG Pattern Definitions for Constructivist Halftones -->
+  <svg style="display:none;" aria-hidden="true">
+    <defs>
+      <pattern id="geo-halftone" width="7" height="7" patternUnits="userSpaceOnUse">
+        <circle cx="1.6" cy="1.6" r="1.35" fill="#8D8779" opacity="0.55"></circle>
+      </pattern>
+      <pattern id="geo-halftone-accent" width="7" height="7" patternUnits="userSpaceOnUse">
+        <circle cx="1.6" cy="1.6" r="1.35" fill="#8C1D2F" opacity="0.45"></circle>
+      </pattern>
+    </defs>
+  </svg>
+
+  <!-- Red Curtain Transition Overlay -->
+  <div id="gateCurtain" class="gate-curtain" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       ENTRY GATE MODAL (Faithful to sudhanshu.me with Rohit Rajput's specs)
+       ========================================================================== -->
+  <div id="gateRoot" class="gate-root" role="dialog" aria-modal="true" aria-label="Rohit Rajput Portfolio Gate">
+    
+    <!-- Constructivist Background Graphics -->
+    <div class="gate-bg-vectors" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" class="h-full w-full" style="color:#A29C90; width: 100%; height: 100%;">
+        <g style="opacity:0.9; transform-origin: 75px 396px;">
+          <rect x="-30" y="300" width="210" height="96" fill="url(#geo-halftone)"></rect>
+          <rect x="-30" y="300" width="210" height="96" fill="#B9B3A4" opacity="0.12"></rect>
+        </g>
+        <g style="opacity:0.85; transform-origin: 103px 264px;">
+          <rect x="66" y="74" width="74" height="190" fill="currentColor"></rect>
+        </g>
+        <g style="opacity:0.8; transform-origin: 116px 730px;">
+          <circle cx="116" cy="688" r="42" fill="currentColor"></circle>
+        </g>
+        <g style="opacity:0.5; transform-origin: 144px 812px;">
+          <g stroke="#191713" stroke-width="2.6" fill="none" stroke-linecap="square">
+            <line x1="60" y1="806" x2="216" y2="806"></line>
+            <path d="M 210 799 L 228 806 L 210 813"></path>
+          </g>
+        </g>
+        <g style="opacity:0.7; transform-origin: 306px 130px;">
+          <path d="M 306 96 L 326 130 L 286 130 Z" fill="#191713"></path>
+        </g>
+        <g style="opacity:0.55; transform-origin: 671px 120px;">
+          <g stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="square">
+            <line x1="596" y1="114" x2="734" y2="114"></line>
+            <path d="M 728 107 L 746 114 L 728 121"></path>
+          </g>
+        </g>
+        <g style="opacity:0.9; transform-origin: 1252px 300px;">
+          <path d="M 1252 172 L 1326 300 L 1178 300 Z" fill="currentColor"></path>
+        </g>
+        <g style="opacity:1; transform-origin: 1322px 596px;">
+          <rect x="1256" y="500" width="132" height="96" fill="url(#geo-halftone)"></rect>
+          <path d="M 1306 525 L 1352 548 L 1306 570 Z" fill="currentColor"></path>
+        </g>
+        <g style="opacity:0.25; transform-origin: 1358px 820px;">
+          <circle cx="1358" cy="784" r="36" fill="#191713"></circle>
+        </g>
+        <g style="opacity:0.5; transform-origin: 744px 854px;">
+          <rect x="660" y="828" width="168" height="26" fill="currentColor"></rect>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Rohit Rajput Halftone Portrait Artwork -->
+    <div class="gate-portrait-wrap">
+      <img src="./Gemini_Generated_Image_rideyprideypride.png" alt="Rohit Rajput Portrait" />
+    </div>
+
+    <!-- Gate Interactive Content -->
+    <div class="gate-inner">
+      <!-- Top Bar -->
+      <header class="gate-topbar">
+        <span class="font-display" style="font-size: 16px; font-weight: 800; letter-spacing: -0.02em;">Rohit Rajput</span>
+        <span class="tag">Portfolio · 2026</span>
+      </header>
+
+      <!-- Center Hero Quote Section (Customized for Rohit) -->
+      <main class="gate-main">
+        <span class="tag">Video Editor &amp; Motion Designer · Working Globally</span>
+        
+        <div class="gate-quote-box" style="margin-top: 14px;">
+          <h1 class="t-gate">
+            <span style="display:block;">Crafted with intent.</span>
+            <span style="display:block;" class="text-accent">Driven by impact.</span>
+          </h1>
+        </div>
+
+        <p class="gate-subtitle">
+          High-retention editing and cinematic motion design. Every cut, cadence, and transition engineered to capture attention and move metrics.
+        </p>
+      </main>
+
+      <!-- Bottom Single Option: "My Work" with the Signature Red Hover Wipe -->
+      <div class="gate-actions-row">
+        <button id="gateMyWorkBtn" class="my-work-gate-btn group" type="button" aria-label="Enter Portfolio - My Work">
+          <!-- The Red Hover Wipe background -->
+          <span class="btn-wipe-bg" aria-hidden="true"></span>
+          
+          <!-- Number indicator -->
+          <span class="btn-number">01</span>
+          
+          <!-- Title & Subtitle -->
+          <div>
+            <span class="btn-title">My Work</span>
+            <span class="btn-desc">Short-form reels, creator content, dynamic typography, and creative motion design.</span>
+          </div>
+
+          <!-- Arrow Circle Button -->
+          <span class="btn-arrow-circle" aria-hidden="true">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor">
+              <path d="M1 7h11M8 3l4 4-4 4"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <nav class="site-nav" id="siteNav">
+    <div class="wrap">
+      <div class="nav-inner">
+        <!-- Brand Logo -->
+        <a href="#top" class="nav-brand">
+          Rohit Rajput<span class="accent-dot">.</span>
+        </a>
+
+        <!-- Interactive Gate Pill Reopener -->
+        <button id="reopenGateBtn" class="nav-pill-badge" title="Re-open gate overview">
+          <span class="status-dot"></span>
+          <span>My Work</span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="mailto:rohitrajput3224@gmail.com?subject=Project%20Inquiry%20%E2%80%94%20Rohit%20Rajput" class="btn btn-dark" style="padding: 9px 18px; font-size: 13.5px;">
+            Email me
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Video Timeline Scrubber Strip -->
+    <div class="timeline-strip" id="timelineStrip" aria-label="Filmstrip Timeline Scrubber">
+      <!-- Dynamic Tick Marks -->
+      <div class="timeline-ticks" id="timelineTicks"></div>
+
+      <!-- Timecode Marker Labels with Accurate Percentage Positioning -->
+      <div class="timeline-labels">
+        <span class="timeline-label-item" style="left:0%;">00:00:00</span>
+        <span class="timeline-label-item" style="left:8.333%;">00:15:00</span>
+        <span class="timeline-label-item" style="left:16.666%;">00:30:00</span>
+        <span class="timeline-label-item" style="left:25%;">00:45:00</span>
+        <span class="timeline-label-item" style="left:33.333%;">01:00:00</span>
+        <span class="timeline-label-item" style="left:41.666%;">01:15:00</span>
+        <span class="timeline-label-item" style="left:50%;">01:30:00</span>
+        <span class="timeline-label-item" style="left:58.333%;">01:45:00</span>
+        <span class="timeline-label-item" style="left:66.666%;">02:00:00</span>
+        <span class="timeline-label-item" style="left:75%;">02:15:00</span>
+        <span class="timeline-label-item" style="left:83.333%;">02:30:00</span>
+        <span class="timeline-label-item" style="left:91.666%;">02:45:00</span>
+      </div>
+
+      <!-- Playhead Needle with Live Timecode -->
+      <div class="timeline-playhead" id="timelinePlayhead">
+        <span class="timecode-box" id="timecodeDisplay">00:00:00:00</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       MAIN CONTENT
+       ========================================================================== -->
+  <main id="top">
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+      <!-- Geometric Halftone Background Vector -->
+      <div class="hero-bg-vectors" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%;">
+          <g style="opacity:0.5; transform-origin: 67px 770px;">
+            <rect x="40" y="620" width="54" height="150" fill="currentColor"></rect>
+          </g>
+          <g style="opacity:0.7; transform-origin: 139px 770px;">
+            <rect x="112" y="560" width="54" height="210" fill="currentColor"></rect>
+          </g>
+          <g style="opacity:0.85; transform-origin: 211px 770px;">
+            <rect x="184" y="470" width="54" height="300" fill="currentColor"></rect>
+          </g>
+          <g style="opacity:0.8; transform-origin: 325px 340px;">
+            <rect x="250" y="120" width="150" height="220" fill="url(#geo-halftone)"></rect>
+            <rect x="250" y="120" width="150" height="220" fill="#B9B3A4" opacity="0.12"></rect>
+          </g>
+          <g style="opacity:0.6; transform-origin: 1275px 262px;">
+            <g stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="square">
+              <line x1="1180" y1="256" x2="1358" y2="256"></line>
+              <path d="M 1352 249 L 1370 256 L 1352 263"></path>
+            </g>
+          </g>
+          <g style="opacity:0.75; transform-origin: 1345px 616px;">
+            <path d="M 1345 520 L 1400 616 L 1290 616 Z" fill="currentColor"></path>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wrap relative">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div>
+            <div class="hero-tags">
+              <span class="tag">Engaging Edits</span>
+              <span class="hero-tag-dot"></span>
+              <span class="tag">Ads</span>
+              <span class="hero-tag-dot"></span>
+              <span class="tag">Motion Design</span>
+            </div>
+
+            <h1 class="t-hero">
+              <span>Motion graphics</span><br />
+              <span>judged by the</span><br />
+              <span class="text-accent">dashboard</span>
+            </h1>
+
+            <p class="hero-lead">
+              I create engaging video edits, dynamic reels, and clean motion design for creators and brands. Passionate about storytelling, rhythmic pacing, and visual polish that keeps viewers hooked. Dedicated to learning, experimenting, and making every single frame count.
+            </p>
+
+            <div class="hero-actions">
+              <a href="mailto:rohitrajput3224@gmail.com?subject=Video%20Editing%20%26%20Motion%20Design%20Inquiry&body=Hi%20Rohit%2C%0A%0AI'd%20like%20to%20collaborate%20on%20a%20video%20project.%0A%0AProject%20Type%3A%20%5BShort-form%20%2F%20YouTube%20Long-form%20%2F%20Ads%20%2F%20Other%5D%0ATimeline%3A%20%0AEst.%20Budget%3A%20" class="btn btn-fill">
+                <span>Email me directly</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M1 6h10M7 2l4 4-4 4"></path>
+                </svg>
+              </a>
+              <a href="#work" class="btn btn-line">
+                <span>See the work</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Rohit Rajput's Halftone Artwork Portrait -->
+          <div>
+            <div class="hero-artwork-frame">
+              <img src="./2.png" alt="Rohit Rajput Motion Graphics Portrait" />
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </header>
+
+    <!-- MARQUEE CLIENT TICKER -->
+    <section class="marquee-section" aria-label="Clients and Brands">
+      <div class="wrap">
+        <div class="marquee-header">
+          <span class="tag">MY SPECILAITY</span>
+          <span class="marquee-rule"></span>
+          <span class="font-mono" style="font-size: 11px; color: var(--color-ink-faint);">08</span>
+        </div>
+      </div>
+
+      <div class="marquee-container">
+        <div class="marquee-fade-left"></div>
+        <div class="marquee-fade-right"></div>
+        
+        <div class="marquee-track" id="marqueeTrack">
+          <!-- Marquee Set 1 -->
+          <div class="marquee-item">
+            <span class="marquee-text">Short-form Video</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Youtube long form </span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Ads and promos</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Color grading</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Al made video</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Short-form Video</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Youtube long form</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Ads and promos</span>
+            <span class="marquee-diamond"></span>
+          </div>
+
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="marquee-item">
+            <span class="marquee-text">Short-form Video</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Youtube long form</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Ads and promos</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Color grading</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Al made video</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Short-form Video</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Youtube long form</span>
+            <span class="marquee-diamond"></span>
+          </div>
+          <div class="marquee-item">
+            <span class="marquee-text">Ads and promos</span>
+            <span class="marquee-diamond"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK SHOWCASE SECTION -->
+    <section id="work" class="work-section">
+      <div class="wrap">
+        <span class="tag">Selected Work</span>
+        <h2 class="t-section" style="margin-top: 12px; max-width: 20ch;">
+          Work, filed by the number it had to move.
+        </h2>
+
+        <!-- Interactive Format Switcher -->
+        <div class="work-filter-bar">
+          <span class="tag" style="color: var(--color-ink-soft);">Choose format:</span>
+          
+          <div class="work-tabs" role="tablist">
+            <span class="tab-indicator" id="tabIndicator"></span>
+            <button class="work-tab-btn active" data-filter="all" role="tab" aria-selected="true">
+              All Disciplines <small>(4)</small>
+            </button>
+            <button class="work-tab-btn" data-filter="velocity-type" role="tab" aria-selected="false">
+              Velocity &amp; Type <small>(2)</small>
+            </button>
+            <button class="work-tab-btn" data-filter="color-story" role="tab" aria-selected="false">
+              Color &amp; Story <small>(2)</small>
+            </button>
+          </div>
+
+          <p class="work-filter-desc" id="filterDescription">
+            Showing all 4 showcase edits: Speed Ramping, Kinetic Subtitles, Cinematic Color Grading, and Narrative Storytelling.
+          </p>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 1: Speed Ramping -->
+          <article class="project-card format-short" data-format="short velocity-type" data-title="Dynamic Speed Ramping &amp; Velocity Flow" data-desc="Seamless velocity curves, dynamic time remapping, and audio-reactive pacing built to capture and hold instant attention." data-video="https://www.youtube-nocookie.com/embed/Yga8pYo1bco?autoplay=1" data-yt="https://youtu.be/Yga8pYo1bco" data-local="varanasi 2.mp4">
+            <div class="project-thumb-box">
+              <img src="./thumbnails/poster_speed_ramping.jpg" alt="Speed Ramping Showcase by Rohit Rajput" loading="lazy" />
+              <div class="play-badge">
+                <span class="play-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="project-format-pill">9:16 VERTICAL</div>
+            </div>
+            <div class="card-info">
+              <div class="card-tag-row">
+                <span class="card-cat-badge">01 // SPEED RAMPING</span>
+                <span class="card-tc">00:00:18</span>
+              </div>
+              <h3 class="card-title">Dynamic Speed Ramping &amp; Velocity Flow</h3>
+              <p class="card-meta">Velocity Curves · Time Remap · Frame Pacing</p>
+              <span class="card-metric-pill">Smooth Velocity Curves</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Subtitles -->
+          <article class="project-card format-short" data-format="short velocity-type" data-title="Kinetic Subtitles &amp; Word-by-Word Sync" data-desc="High-retention mobile captions with word-by-word active highlights, custom micro-animations, and punchy visual anchors." data-video="https://www.youtube-nocookie.com/embed/W9j6_IA1-K8?autoplay=1" data-yt="https://youtu.be/W9j6_IA1-K8" data-local="subtitle portf.mp4">
+            <div class="project-thumb-box">
+              <img src="./thumbnails/poster_subtitles.jpg" alt="Kinetic Subtitles Showcase by Rohit Rajput" loading="lazy" />
+              <div class="play-badge">
+                <span class="play-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="project-format-pill">9:16 VERTICAL</div>
+            </div>
+            <div class="card-info">
+              <div class="card-tag-row">
+                <span class="card-cat-badge">02 // KINETIC SUBTITLES</span>
+                <span class="card-tc">00:00:24</span>
+              </div>
+              <h3 class="card-title">Kinetic Subtitles &amp; Word-by-Word Sync</h3>
+              <p class="card-meta">Sound-Off Hook · Karaoke Highlights · Retention</p>
+              <span class="card-metric-pill">Zero Dead Frames</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Color Grading -->
+          <article class="project-card format-short" data-format="short color-story" data-title="Cinematic Color Grading &amp; Tone Balancing" data-desc="LOG transformation, deliberate contrast curves, warm skin tones with rich shadow depth to give raw footage a polished commercial finish." data-video="https://www.youtube-nocookie.com/embed/KKktkkSDUNc?autoplay=1" data-yt="https://youtu.be/KKktkkSDUNc" data-local="fish portf.mp4">
+            <div class="project-thumb-box">
+              <img src="./thumbnails/poster_color_grading.jpg" alt="Color Grading Showcase by Rohit Rajput" loading="lazy" />
+              <div class="play-badge">
+                <span class="play-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="project-format-pill">9:16 VERTICAL</div>
+            </div>
+            <div class="card-info">
+              <div class="card-tag-row">
+                <span class="card-cat-badge">03 // COLOR GRADING</span>
+                <span class="card-tc">00:00:28</span>
+              </div>
+              <h3 class="card-title">Cinematic Color Grading &amp; Tone Balancing</h3>
+              <p class="card-meta">LOG to Rec.709 · Film Emulation · Skin Fidelity</p>
+              <span class="card-metric-pill">Commercial Grade &amp; Depth</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Storytelling -->
+          <article class="project-card format-short" data-format="short color-story" data-title="Visual Storytelling &amp; Narrative Flow" data-desc="Strategic three-act pacing, hook retention, and atmospheric sound design that transforms visual sequences into an engaging emotional story." data-video="https://www.youtube-nocookie.com/embed/109kK4ONxuk?autoplay=1" data-yt="https://youtu.be/109kK4ONxuk" data-local="ai love.mp4">
+            <div class="project-thumb-box">
+              <img src="./thumbnails/poster_storytelling.jpg" alt="Storytelling Showcase by Rohit Rajput" loading="lazy" />
+              <div class="play-badge">
+                <span class="play-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+              </div>
+              <div class="project-format-pill">9:16 VERTICAL</div>
+            </div>
+            <div class="card-info">
+              <div class="card-tag-row">
+                <span class="card-cat-badge">04 // STORYTELLING</span>
+                <span class="card-tc">00:00:32</span>
+              </div>
+              <h3 class="card-title">Visual Storytelling &amp; Narrative Flow</h3>
+              <p class="card-meta">Three-Act Pacing · Retention Arc · Emotional Cut</p>
+              <span class="card-metric-pill">Three-Act Hook &amp; Payoff</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MY SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <!-- Background Vectors -->
+      <div class="skills-bg-vectors" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%;">
+          <g style="opacity: 0.04; transform-origin: 1400px 300px;">
+            <circle cx="1400" cy="200" r="280" fill="#138A6B"></circle>
+          </g>
+          <g style="opacity: 0.035; transform-origin: 40px 700px;">
+            <circle cx="60" cy="740" r="220" fill="#BB3F0E"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wrap relative">
+        <div class="skills-header">
+          <div style="display: flex; align-items: baseline; gap: 16px;">
+            <span class="tag">My Skills &amp; Toolkit</span>
+            <span class="skills-header-rule"></span>
+            <span class="font-mono" style="font-size: 11px; color: #5A6B66;">08 Disciplines</span>
+          </div>
+
+          <h2 class="t-section" style="margin-top: 18px; max-width: 26ch;">
+            Every frame engineered with rhythm, pacing &amp; intent.
+          </h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Card 1: Editing -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="Editing timeline micro-animation">
+                <!-- Track 1 -->
+                <rect x="28" y="38" width="54" height="18" rx="4" fill="#138A6B" />
+                <rect x="88" y="38" width="34" height="18" rx="4" fill="#BB3F0E" />
+                <rect x="128" y="38" width="84" height="18" rx="4" fill="#138A6B" />
+                <!-- Track 2 -->
+                <rect x="28" y="62" width="76" height="18" rx="4" fill="#BB3F0E" />
+                <rect x="110" y="62" width="46" height="18" rx="4" fill="#138A6B" />
+                <rect x="162" y="62" width="50" height="18" rx="4" fill="#BB3F0E" />
+                <!-- Sweeping Timeline Playhead -->
+                <g class="anim-playhead-group">
+                  <line x1="0" y1="26" x2="0" y2="92" stroke="#0D1B1A" stroke-width="2" stroke-linecap="round" />
+                  <polygon points="-3,26 3,26 0,31" fill="#0D1B1A" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="skill-title">Editing</h3>
+            <p class="skill-desc">Story structure, pacing and rhythm across every track.</p>
+          </article>
+
+          <!-- Card 2: Cutting -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="Cutting micro-animation">
+                <!-- Cutting Blocks -->
+                <rect class="cut-block-left" x="50" y="48" width="68" height="24" rx="4" fill="#138A6B" />
+                <rect class="cut-block-right" x="122" y="48" width="68" height="24" rx="4" fill="#BB3F0E" />
+                <!-- Cutting Blade Line -->
+                <line class="cut-blade" x1="120" y1="30" x2="120" y2="90" stroke="#0D1B1A" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="skill-title">Cutting</h3>
+            <p class="skill-desc">Clean cuts on action and on beat, with no dead frames.</p>
+          </article>
+
+          <!-- Card 3: Speed ramping -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="Speed ramping micro-animation">
+                <!-- Peak Label -->
+                <text x="112" y="24" font-family="'DM Mono', monospace" font-size="11" font-weight="700" fill="#BB3F0E" text-anchor="middle">400%</text>
+                <!-- Baseline -->
+                <line x1="30" y1="84" x2="210" y2="84" stroke="#CFDCD5" stroke-width="1.2" stroke-linecap="round" />
+                <!-- Baseline Labels -->
+                <text x="30" y="98" font-family="'DM Mono', monospace" font-size="11" fill="#5A6B66">100%</text>
+                <text x="210" y="98" font-family="'DM Mono', monospace" font-size="11" fill="#5A6B66" text-anchor="end">25%</text>
+                <!-- Speed Curve -->
+                <path id="rampPath" d="M 30 74 C 60 74, 85 32, 112 32 C 132 32, 142 68, 162 68 C 178 68, 192 56, 210 58" fill="none" stroke="#138A6B" stroke-width="2.6" stroke-linecap="round" />
+                <!-- Traveling Rust Dot -->
+                <circle class="ramp-dot" r="5" fill="#BB3F0E">
+                  <animateMotion 
+                    path="M 30 74 C 60 74, 85 32, 112 32 C 132 32, 142 68, 162 68 C 178 68, 192 56, 210 58" 
+                    dur="3.2s" 
+                    repeatCount="indefinite" 
+                    keyPoints="0; 0.42; 0.72; 1"
+                    keyTimes="0; 0.35; 0.65; 1"
+                    calcMode="spline"
+                    keySplines="0.4 0 0.2 1; 0.2 0 0.2 1; 0.4 0 0.2 1"
+                  />
+                </circle>
+              </svg>
+            </div>
+            <h3 class="skill-title">Speed ramping</h3>
+            <p class="skill-desc">Smooth ramps between slow motion and fast, timed to the music.</p>
+          </article>
+
+          <!-- Card 4: Animation -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="Squash and stretch bouncing ball animation">
+                <!-- Ground Baseline -->
+                <line x1="40" y1="88" x2="200" y2="88" stroke="#CFDCD5" stroke-width="1.2" stroke-linecap="round" />
+                <!-- Ground Dynamic Shadow -->
+                <ellipse class="anim-ball-shadow" cx="120" cy="88" rx="14" ry="3.5" fill="#0D1B1A" />
+                <!-- Bouncing Ball with Squash & Stretch -->
+                <ellipse class="anim-bouncing-ball" cx="120" cy="78" rx="10" ry="10" fill="#138A6B" />
+              </svg>
+            </div>
+            <h3 class="skill-title">Animation</h3>
+            <p class="skill-desc">Motion graphics and titles with real weight and timing.</p>
+          </article>
+
+          <!-- Card 5: Subtitles -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <div class="subtitles-pill">
+                <span class="sub-word sw-1">Hook</span>
+                <span class="sub-word sw-2">them</span>
+                <span class="sub-word sw-3">in</span>
+                <span class="sub-word sw-4">one</span>
+                <span class="sub-word sw-5">line</span>
+              </div>
+            </div>
+            <h3 class="skill-title">Subtitles</h3>
+            <p class="skill-desc">Accurate captions with word-by-word highlights.</p>
+          </article>
+
+          <!-- Card 6: Color grading -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="Color grading slider animation">
+                <defs>
+                  <linearGradient id="cgSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#0E3D35" />
+                    <stop offset="35%" stop-color="#34B191" />
+                    <stop offset="68%" stop-color="#DEB79E" />
+                    <stop offset="100%" stop-color="#D75C30" />
+                  </linearGradient>
+                </defs>
+                <!-- Spectrum Bar -->
+                <rect x="42" y="44" width="156" height="20" rx="10" fill="url(#cgSpectrum)" />
+                <!-- Gliding Needle Handle -->
+                <g class="anim-slider-group">
+                  <rect x="0" y="34" width="3.5" height="40" rx="1.75" fill="#0D1B1A" />
+                </g>
+                <!-- Monospace Labels -->
+                <text x="42" y="82" font-family="'DM Mono', monospace" font-size="11" fill="#5A6B66">shadows</text>
+                <text x="198" y="82" font-family="'DM Mono', monospace" font-size="11" fill="#BB3F0E" text-anchor="end">highlights</text>
+              </svg>
+            </div>
+            <h3 class="skill-title">Color grading</h3>
+            <p class="skill-desc">Matched shots and a deliberate look, from teal shadows to warm skin.</p>
+          </article>
+
+          <!-- Card 7: Storytelling -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="Storytelling three-act curve animation">
+                <!-- Three-Act Narrative Curve Track (Faint Guide) -->
+                <path d="M 30 76 C 55 76, 68 62, 88 62 C 108 62, 118 54, 134 54 C 150 54, 158 20, 176 20 C 186 20, 196 50, 210 74" fill="none" stroke="#138A6B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.22" />
+                <!-- Three-Act Animated Drawing Curve -->
+                <path class="story-curve-line" d="M 30 76 C 55 76, 68 62, 88 62 C 108 62, 118 54, 134 54 C 150 54, 158 20, 176 20 C 186 20, 196 50, 210 74" fill="none" stroke="#138A6B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+                <!-- Monospace Act Labels -->
+                <text x="74" y="94" font-family="'DM Mono', monospace" font-size="11" fill="#5A6B66" text-anchor="middle">setup</text>
+                <text x="134" y="94" font-family="'DM Mono', monospace" font-size="11" fill="#5A6B66" text-anchor="middle">conflict</text>
+                <text x="180" y="94" font-family="'DM Mono', monospace" font-size="11" font-weight="600" fill="#BB3F0E" text-anchor="middle">payoff</text>
+              </svg>
+            </div>
+            <h3 class="skill-title">Storytelling</h3>
+            <p class="skill-desc">Three-act structure, even in a 30 second clip.</p>
+          </article>
+
+          <!-- Card 8: AI video creation -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="AI generated frames matrix animation">
+                <!-- 4x2 Grid of Generated Frames -->
+                <!-- Row 1 -->
+                <rect class="ai-tile ai-tile-1" x="52" y="34" width="28" height="22" rx="4" />
+                <rect class="ai-tile ai-tile-2" x="88" y="34" width="28" height="22" rx="4" />
+                <rect class="ai-tile ai-tile-3" x="124" y="34" width="28" height="22" rx="4" />
+                <rect class="ai-tile ai-tile-4" x="160" y="34" width="28" height="22" rx="4" />
+                <!-- Row 2 -->
+                <rect class="ai-tile ai-tile-5" x="52" y="64" width="28" height="22" rx="4" />
+                <rect class="ai-tile ai-tile-6" x="88" y="64" width="28" height="22" rx="4" />
+                <rect class="ai-tile ai-tile-7" x="124" y="64" width="28" height="22" rx="4" />
+                <rect class="ai-tile ai-tile-8" x="160" y="64" width="28" height="22" rx="4" />
+              </svg>
+            </div>
+            <h3 class="skill-title">AI video creation</h3>
+            <p class="skill-desc">Generated shots and concepts, edited into one consistent film.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (WHAT I CAN MAKE FOR YOU) -->
+    <section id="services" class="services-section">
+      <!-- Background Vectors -->
+      <div class="services-bg-vectors" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%;">
+          <g style="opacity: 0.04; transform-origin: 100px 200px;">
+            <circle cx="120" cy="220" r="240" fill="#8C1D2F"></circle>
+          </g>
+          <g style="opacity: 0.035; transform-origin: 1350px 750px;">
+            <rect x="1200" y="600" width="280" height="280" fill="#138A6B" transform="rotate(25 1340 740)"></rect>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wrap relative">
+        <div class="services-header">
+          <div style="display: flex; align-items: baseline; gap: 16px;">
+            <span class="tag">SERVICES · TAILORED OFFERINGS</span>
+            <span class="services-header-rule"></span>
+            <span class="font-mono" style="font-size: 11px; color: var(--color-ink-faint);">06 Specialties</span>
+          </div>
+
+          <h2 class="t-section" style="margin-top: 18px; max-width: 22ch;">
+            <span>What I can</span><br />
+            <span>make for </span><span class="text-accent">you.</span>
+          </h2>
+
+          <p class="services-lead">
+            Tailored post-production and motion design engineered for creators, high-growth DTC brands, and founder-led media companies. Every deliverable formatted to win retention and drive results.
+          </p>
+        </div>
+
+        <!-- 3x2 Grid of 6 Specialized Service Cards -->
+        <div class="services-grid">
+
+          <!-- Card 1: Short-Form Video -->
+          <article class="service-card">
+            <div class="service-graphic-panel">
+              <svg viewBox="0 0 200 100" class="service-svg" aria-label="Short-form video phone animation">
+                <!-- Phone Outline -->
+                <rect x="75" y="8" width="50" height="84" rx="7" fill="#141716" stroke="#2A302D" stroke-width="1.5" />
+                <rect x="80" y="14" width="40" height="72" rx="4" fill="#0D1B1A" />
+                <!-- Notch -->
+                <rect x="92" y="10" width="16" height="2.5" rx="1.2" fill="#2A302D" />
+                <!-- Scrolling Feed Post -->
+                <g class="anim-feed-scroll">
+                  <rect x="84" y="22" width="32" height="18" rx="2" fill="#138A6B" opacity="0.85" />
+                  <line x1="84" y1="44" x2="108" y2="44" stroke="#B4D4CB" stroke-width="1.5" stroke-linecap="round" />
+                  <line x1="84" y1="48" x2="100" y2="48" stroke="#B4D4CB" stroke-width="1.2" stroke-linecap="round" opacity="0.6" />
+                  <rect x="84" y="54" width="32" height="18" rx="2" fill="#BB3F0E" opacity="0.85" />
+                </g>
+                <!-- Floating Like Heart -->
+                <g class="anim-heart-float">
+                  <path d="M 112 36 C 112 32, 117 32, 117 36 C 117 40, 112 43, 112 45 C 112 43, 107 40, 107 36 C 107 32, 112 32, 112 36 Z" fill="#E83D54" />
+                </g>
+                <!-- EQ Audio Soundbars -->
+                <g class="eq-bars">
+                  <rect class="eq-bar eq-b1" x="85" y="74" width="2" height="6" rx="1" fill="#FFFFFF" />
+                  <rect class="eq-bar eq-b2" x="90" y="72" width="2" height="8" rx="1" fill="#FFFFFF" />
+                  <rect class="eq-bar eq-b3" x="95" y="70" width="2" height="10" rx="1" fill="#FFFFFF" />
+                  <rect class="eq-bar eq-b4" x="100" y="73" width="2" height="7" rx="1" fill="#FFFFFF" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="service-title">Short-form video</h3>
+            <p class="service-desc">
+              Reels, Shorts, and TikTok edits crafted with kinetic pacing, dynamic retention hooks, sound design, and sound-matched cuts that stop the scroll.
+            </p>
+            <div class="service-pills">
+              <span class="service-pill">9:16 Vertical</span>
+              <span class="service-pill">Scroll-Stopper</span>
+              <span class="service-pill">Sound FX</span>
+            </div>
+          </article>
+
+          <!-- Card 2: YouTube Long-Form -->
+          <article class="service-card">
+            <div class="service-graphic-panel">
+              <svg viewBox="0 0 200 100" class="service-svg" aria-label="YouTube long-form widescreen animation">
+                <!-- 16:9 Cinema Frame -->
+                <rect x="42" y="16" width="116" height="68" rx="5" fill="#0D1B1A" stroke="#24302C" stroke-width="1.5" />
+                <!-- Video Screen -->
+                <rect x="46" y="20" width="108" height="52" rx="3" fill="#132420" />
+                <!-- Center Play Button with Glow -->
+                <circle cx="100" cy="46" r="11" fill="rgba(140, 29, 47, 0.25)" />
+                <circle cx="100" cy="46" r="9" fill="#8C1D2F" />
+                <polygon points="97,42 105,46 97,50" fill="#FFFFFF" />
+                <!-- Waveform Audio Track -->
+                <path class="anim-yt-wave" d="M 50 64 Q 60 58, 70 64 T 90 64 T 110 64 T 130 64 T 150 64" fill="none" stroke="#138A6B" stroke-width="1.5" opacity="0.8" />
+                <!-- Chaptered Timeline Scrubber Bar -->
+                <line x1="50" y1="78" x2="78" y2="78" stroke="#8C1D2F" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="82" y1="78" x2="118" y2="78" stroke="#138A6B" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="122" y1="78" x2="150" y2="78" stroke="#4A5854" stroke-width="2.5" stroke-linecap="round" />
+                <!-- Sweeping Playhead Needle -->
+                <circle class="anim-yt-playhead" cx="0" cy="78" r="3" fill="#FFFFFF" />
+              </svg>
+            </div>
+            <h3 class="service-title">YouTube long-form</h3>
+            <p class="service-desc">
+              Story-led editing for creator vlogs, podcast interviews, and explainers. Engineered to safeguard Average View Duration (AVD) and sustain engagement.
+            </p>
+            <div class="service-pills">
+              <span class="service-pill">16:9 Master</span>
+              <span class="service-pill">Story Flow</span>
+              <span class="service-pill">AVD Retention</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Ads & Promos -->
+          <article class="service-card">
+            <div class="service-graphic-panel">
+              <svg viewBox="0 0 200 100" class="service-svg" aria-label="High-converting ads animation">
+                <rect x="36" y="14" width="128" height="72" rx="6" fill="#0D1B1A" stroke="#24302C" stroke-width="1.5" />
+                <!-- Grid Graph Lines -->
+                <line x1="48" y1="32" x2="152" y2="32" stroke="#1D2A26" stroke-width="1" stroke-dasharray="2 3" />
+                <line x1="48" y1="52" x2="152" y2="52" stroke="#1D2A26" stroke-width="1" stroke-dasharray="2 3" />
+                <line x1="48" y1="70" x2="152" y2="70" stroke="#1D2A26" stroke-width="1" />
+                <!-- Surging Conversion Curve -->
+                <path class="anim-ad-curve" d="M 48 68 C 65 68, 75 58, 92 42 C 105 28, 120 24, 150 20" fill="none" stroke="#BB3F0E" stroke-width="2.5" stroke-linecap="round" />
+                <!-- Metric Badge -->
+                <g class="anim-badge-pulse" transform="translate(108, 18)">
+                  <rect x="0" y="0" width="46" height="16" rx="4" fill="#8C1D2F" />
+                  <text x="23" y="11.5" font-family="'DM Mono', monospace" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">+42% CTR</text>
+                </g>
+                <!-- Clicking Cursor & Ripple -->
+                <g class="anim-ad-click" transform="translate(86, 44)">
+                  <circle class="anim-click-ring" cx="0" cy="0" r="8" fill="none" stroke="#138A6B" stroke-width="1.5" />
+                  <polygon points="0,0 3,11 6,8 10,13 12,11 8,6 12,4" fill="#FFFFFF" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="service-title">Ads and promos</h3>
+            <p class="service-desc">
+              Direct-response video creatives for DTC brands and digital agencies. Cut to seize attention in the first 3 seconds, lower CPA, and convert cold traffic.
+            </p>
+            <div class="service-pills">
+              <span class="service-pill">Meta &amp; TikTok</span>
+              <span class="service-pill">Hook Testing</span>
+              <span class="service-pill">1:1 · 4:5 · 9:16</span>
+            </div>
+          </article>
+
+          <!-- Card 4: Subtitles & Captions -->
+          <article class="service-card">
+            <div class="service-graphic-panel">
+              <svg viewBox="0 0 200 100" class="service-svg" aria-label="Kinetic subtitles animation">
+                <rect x="34" y="16" width="132" height="68" rx="6" fill="#0D1B1A" stroke="#24302C" stroke-width="1.5" />
+                <!-- Video Ambient Backdrop -->
+                <rect x="40" y="22" width="120" height="56" rx="4" fill="#13221E" />
+                <!-- Dynamic Pill Captions Box -->
+                <rect x="48" y="38" width="104" height="24" rx="12" fill="#FFFFFF" />
+                <!-- Kinetic Words with Staggered Glow -->
+                <text x="56" y="54" font-family="'DM Mono', monospace" font-size="11" font-weight="700">
+                  <tspan class="anim-word-glow-1" fill="#0D1B1A">HOOK </tspan>
+                  <tspan class="anim-word-glow-2" fill="#BB3F0E">THEM </tspan>
+                  <tspan class="anim-word-glow-3" fill="#0D1B1A">FAST</tspan>
+                </text>
+                <!-- Accent Floating Emoji Tag -->
+                <g class="anim-emoji-pop" transform="translate(138, 36)">
+                  <circle cx="6" cy="6" r="7" fill="#FBBF24" />
+                  <path d="M 3 5 Q 4 3 5 5 M 7 5 Q 8 3 9 5 M 4 8 Q 6 10 8 8" stroke="#191713" stroke-width="1" fill="none" stroke-linecap="round" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="service-title">Subtitles and captions</h3>
+            <p class="service-desc">
+              Accurate, bespoke captions designed to boost retention. Includes animated word-by-word highlights, custom typography, emoji accents, and sound syncs.
+            </p>
+            <div class="service-pills">
+              <span class="service-pill">Burned-in</span>
+              <span class="service-pill">SRT / XML</span>
+              <span class="service-pill">Karaoke Sync</span>
+            </div>
+          </article>
+
+          <!-- Card 5: Color Grading -->
+          <article class="service-card">
+            <div class="service-graphic-panel">
+              <svg viewBox="0 0 200 100" class="service-svg" aria-label="Color grading before after animation">
+                <defs>
+                  <linearGradient id="gradedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0E3D35" />
+                    <stop offset="50%" stop-color="#2D9A7D" />
+                    <stop offset="100%" stop-color="#E07238" />
+                  </linearGradient>
+                </defs>
+                <rect x="36" y="15" width="128" height="70" rx="5" fill="#0D1B1A" stroke="#24302C" stroke-width="1.5" />
+                <!-- Graded Side (Background) -->
+                <rect x="40" y="19" width="120" height="62" rx="3" fill="url(#gradedGrad)" />
+                <circle cx="130" cy="50" r="16" fill="#FAD1A8" opacity="0.9" />
+                <!-- Flat LOG Side (Clipped) -->
+                <g class="anim-log-clip-group">
+                  <rect x="40" y="19" width="60" height="62" rx="3" fill="#6A7570" opacity="0.88" />
+                  <circle cx="130" cy="50" r="16" fill="#8E9994" opacity="0.9" />
+                </g>
+                <!-- Sweeping Wipe Divider Line -->
+                <g class="anim-wipe-slider">
+                  <line x1="100" y1="18" x2="100" y2="82" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+                  <circle cx="100" cy="50" r="5" fill="#FFFFFF" stroke="#0D1B1A" stroke-width="1" />
+                </g>
+                <!-- Monospace Overlay Labels -->
+                <text x="46" y="32" font-family="'DM Mono', monospace" font-size="8" fill="#FFFFFF" opacity="0.75">LOG</text>
+                <text x="154" y="32" font-family="'DM Mono', monospace" font-size="8" fill="#FFFFFF" font-weight="700" text-anchor="end">GRADED</text>
+              </svg>
+            </div>
+            <h3 class="service-title">Color grading</h3>
+            <p class="service-desc">
+              Shot matching, exposure correction, and signature film looks. Calibrated contrast curves, skin-tone isolation, and cinematic palette harmony.
+            </p>
+            <div class="service-pills">
+              <span class="service-pill">Shot Match</span>
+              <span class="service-pill">Film Emulation</span>
+              <span class="service-pill">Rec.709 / Log</span>
+            </div>
+          </article>
+
+          <!-- Card 6: AI-Made Video -->
+          <article class="service-card">
+            <div class="service-graphic-panel">
+              <svg viewBox="0 0 200 100" class="service-svg" aria-label="AI generative video animation">
+                <rect x="36" y="15" width="128" height="70" rx="6" fill="#0D1B1A" stroke="#24302C" stroke-width="1.5" />
+                <!-- Ambient Neural Radial Glow -->
+                <circle cx="100" cy="50" r="28" fill="rgba(19, 138, 107, 0.16)" />
+                <!-- Rotating Neural Rings -->
+                <ellipse class="anim-ai-ring-1" cx="100" cy="50" rx="34" ry="12" fill="none" stroke="#138A6B" stroke-width="1.2" stroke-dasharray="3 4" />
+                <ellipse class="anim-ai-ring-2" cx="100" cy="50" rx="26" ry="18" fill="none" stroke="#BB3F0E" stroke-width="1.2" stroke-dasharray="2 3" />
+                <!-- Shimmering Central AI Spark -->
+                <g class="anim-ai-spark-pulse" transform="translate(100, 50)">
+                  <circle cx="0" cy="0" r="6" fill="#FFFFFF" />
+                  <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#B4D4CB" opacity="0.9" />
+                </g>
+                <!-- AI Badge Pill -->
+                <g transform="translate(44, 22)">
+                  <rect x="0" y="0" width="48" height="13" rx="3" fill="rgba(180, 212, 203, 0.15)" stroke="#138A6B" stroke-width="0.8" />
+                  <text x="24" y="9.5" font-family="'DM Mono', monospace" font-size="7.5" fill="#B4D4CB" font-weight="600" text-anchor="middle">✦ AI GENERATED</text>
+                </g>
+              </svg>
+            </div>
+            <h3 class="service-title">AI-made video</h3>
+            <p class="service-desc">
+              Concept frames, photorealistic b-roll generation, and neural scene extension edited cohesively with your real footage for standout visuals.
+            </p>
+            <div class="service-pills">
+              <span class="service-pill">AI B-roll</span>
+              <span class="service-pill">Concept Shots</span>
+              <span class="service-pill">Upscaling 4K</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Integrated Standards & Workflow Bar (Reassuring client deliverables) -->
+        <div class="services-standards-strip">
+          <div class="standard-item">
+            <span class="standard-dot"></span>
+            <div class="standard-content">
+              <span class="standard-title">48-Hour Turnaround</span>
+              <span class="standard-sub">Rapid first cut delivery on short-form assets</span>
+            </div>
+          </div>
+          <div class="standard-item">
+            <span class="standard-dot"></span>
+            <div class="standard-content">
+              <span class="standard-title">Global Timezone Sync</span>
+              <span class="standard-sub">Dedicated overlap windows for IST, UK &amp; EST</span>
+            </div>
+          </div>
+          <div class="standard-item">
+            <span class="standard-dot"></span>
+            <div class="standard-content">
+              <span class="standard-title">Two Revisions Included</span>
+              <span class="standard-sub">Timecoded Frame.io notes, zero email friction</span>
+            </div>
+          </div>
+          <div class="standard-item">
+            <span class="standard-dot"></span>
+            <div class="standard-content">
+              <span class="standard-title">Full Platform Delivery</span>
+              <span class="standard-sub">9:16, 16:9, 1:1 masters plus clean SRT project files</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DARK CONTACT / CTA SECTION -->
+    <section id="contact" class="contact-section">
+      <!-- Halftone Graphic Overlay -->
+      <div class="contact-bg-vectors" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%;">
+          <g style="opacity:0.7; transform-origin: 70px 190px;">
+            <rect x="-60" y="120" width="260" height="70" fill="currentColor"></rect>
+          </g>
+          <g style="opacity:0.55; transform-origin: 1325px 255px;">
+            <path d="M 1325 90 L 1420 255 L 1230 255 Z" fill="currentColor"></path>
+          </g>
+          <g style="opacity:0.12; transform-origin: 1275px 810px;">
+            <circle cx="1275" cy="685" r="125" fill="#E1DDD3"></circle>
+          </g>
+          <g style="opacity:0.5; transform-origin: 145px 710px;">
+            <rect x="70" y="600" width="150" height="110" fill="url(#geo-halftone)"></rect>
+            <path d="M 127 629 L 179 655 L 127 680 Z" fill="currentColor"></path>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wrap relative">
+        <span class="tag" style="color: rgba(225, 221, 211, 0.5);">Open for Q4 · Now Accepting New Client Projects</span>
+
+        <h2 class="t-cta" style="margin-top: 16px; max-width: 20ch;">
+          <span>Have a project in mind? </span>
+          <span class="contact-highlight">Let's build it.</span>
+        </h2>
+
+        <p class="contact-lead">
+          Skip the scheduling friction. Email your brief, raw footage links, or creative ideas directly to my inbox. I review every submission within 24 hours with custom creative angles, turnaround timelines, and clear estimates.
+        </p>
+
+        <!-- Direct Email Pipeline Card -->
+        <div class="email-pipeline-card">
+          <div class="pipeline-main-row">
+            <div class="pipeline-info">
+              <span class="pipeline-badge font-mono">DIRECT INBOX</span>
+              <a href="mailto:rohitrajput3224@gmail.com?subject=Project%20Inquiry%20%E2%80%94%20Rohit%20Rajput" class="pipeline-email-text" id="pipelineEmailLink">
+                rohitrajput3224@gmail.com
+              </a>
+            </div>
+
+            <div class="pipeline-buttons">
+              <!-- Copy Email Address Button -->
+              <button id="copyEmailBtn" class="btn btn-copy-email" type="button" title="Copy email address to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="copy-svg">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copyEmailLabel">Copy Address</span>
+              </button>
+
+              <!-- Compose Email Action -->
+              <a href="mailto:rohitrajput3224@gmail.com?subject=New%20Project%20Inquiry%20%E2%80%94%20Rohit%20Rajput&body=Hi%20Rohit%2C%0A%0AI'd%20like%20to%20discuss%20a%20video%20project.%0A%0AProject%20Summary%3A%20%0ATarget%20Platform%3A%20%0ATimeline%3A%20%0A%0ABest%20regards%2C" class="btn btn-contact-white">
+                <span>Compose Email</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M1 6h10M7 2l4 4-4 4"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick-Start Email Templates -->
+          <div class="pipeline-templates-row">
+            <span class="pipeline-templates-label font-mono">QUICK INQUIRY TEMPLATES:</span>
+            <div class="pipeline-pills-wrap">
+              <a href="mailto:rohitrajput3224@gmail.com?subject=Short-form%20Video%20Sprint%20Inquiry&body=Hi%20Rohit%2C%0A%0AI'm%20interested%20in%20high-retention%20short-form%20video%20editing%20for%20Reels%2FTikTok.%0A%0AProject%20Details%3A%0AVolume%3A%20%0ATimeline%3A%20" class="pipeline-template-pill">
+                ⚡ Short-Form Sprint
+              </a>
+              <a href="mailto:rohitrajput3224@gmail.com?subject=YouTube%20Long-form%20Editing%20Inquiry&body=Hi%20Rohit%2C%0A%0AI'd%20like%20to%20discuss%20YouTube%20long-form%20storytelling%20editing.%0A%0AChannel%20Link%3A%20%0AAvg%20Video%20Length%3A%20" class="pipeline-template-pill">
+                🎬 YouTube Long-Form
+              </a>
+              <a href="mailto:rohitrajput3224@gmail.com?subject=DTC%20Ad%20Creative%20Inquiry&body=Hi%20Rohit%2C%0A%0AWe%20need%20high-converting%20DTC%20ad%20creative%20variants%20for%20paid%20acquisition.%0A%0ABrand%2FProduct%3A%20%0ATarget%20CPA%20or%20Angle%3A%20" class="pipeline-template-pill">
+                📈 DTC Ad Creative
+              </a>
+              <a href="mailto:rohitrajput3224@gmail.com?subject=Color%20Grading%20%26%20Motion%20Design%20Inquiry&body=Hi%20Rohit%2C%0A%0AI'm%20looking%20for%20bespoke%20motion%20graphics%20and%20color%20grading.%0A%0AProject%20Scope%3A%20" class="pipeline-template-pill">
+                🎨 Motion &amp; Color
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-perks-row">
+          <div class="perk-item"><span>→</span> Replies within 24 hours guaranteed</div>
+          <div class="perk-item"><span>→</span> Direct 1-on-1 collaboration with Rohit</div>
+          <div class="perk-item"><span>→</span> Invoicing in USD, EUR, or INR</div>
+          <!-- <div class="perk-item"><span>→</span> NDA signed upon request</div> -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <a href="https://www.linkedin.com/in/rohit-rajput-3324561ba" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-link">X (Twitter)</a>
+        <a href="mailto:rohitrajput3224@gmail.com" class="footer-link">Email</a>
+
+        <span class="footer-copy">
+          Motion graphics for brands that count · Rohit Rajput · © 2026
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       VIDEO LIGHTBOX MODAL
+       ========================================================================== -->
+  <div id="videoModal" class="video-modal" role="dialog" aria-modal="true" aria-label="Project Preview">
+    <div class="video-modal-content is-short-format">
+      <div class="video-modal-topbar">
+        <div class="modal-source-pills" id="modalSourcePills">
+          <button class="source-pill active" id="btnLocalSource" type="button">1080p Master</button>
+          <button class="source-pill" id="btnYtSource" type="button">YouTube Embed</button>
+        </div>
+        <div class="modal-actions-right">
+          <a id="modalYtDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="modal-yt-link">
+            <span>Open on YouTube</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+          <button id="videoModalClose" class="video-modal-close-btn" aria-label="Close video preview" type="button">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="video-container ratio-short" id="videoContainer"></div>
+
+      <div class="video-modal-details">
+        <h4 class="modal-proj-title" id="modalProjTitle">Project Title</h4>
+        <p class="modal-proj-desc" id="modalProjDesc">Project description and strategy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Application Logic -->
+  <script src="./app.js?v=4.0"></script>
+</body>
+</html>
