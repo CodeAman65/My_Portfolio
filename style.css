@@ -12,13 +12,13 @@
   --color-ink-faint: #646055;
   --color-rule: #C5C0B2;
   --color-well: #191713;
-  
+
   /* Primary Accent: Signature Crimson Red (from sudhanshu.me AI mode) */
   --color-accent: #8C1D2F;
   --color-accent-deep: #5E121F;
   --color-accent-lift: #D92534;
   --color-accent-glow: rgba(140, 29, 47, 0.18);
-  
+
   --font-display: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: 'Instrument Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -54,9 +54,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html:has(body.is-locked),
 body.is-locked {
-  overflow: hidden;
+  overflow: hidden !important;
   height: 100vh;
+  max-height: 100vh;
 }
 
 ::selection {
@@ -93,9 +95,10 @@ h1, h2, h3, h4 {
 }
 
 .t-gate {
-  font-size: clamp(34px, 5.8vw, 84px);
+  font-size: clamp(44px, min(6.6vw, 10.5vh), 94px);
   line-height: 0.94;
-  letter-spacing: -0.048em;
+  letter-spacing: -0.045em;
+  font-weight: 800;
 }
 
 .t-hero {
@@ -238,30 +241,6 @@ h1, h2, h3, h4 {
   z-index: 1;
 }
 
-/* Gate Portrait of Rohit with Multiply Blend Mode */
-.gate-portrait-wrap {
-  position: absolute;
-  bottom: 84px;
-  right: clamp(20px, 8vw, 130px);
-  height: clamp(340px, 68vh, 680px);
-  width: clamp(260px, 36vw, 520px);
-  pointer-events: none;
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.gate-portrait-wrap img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-position: bottom right;
-  mix-blend-mode: multiply; /* Seamlessly blends drawing into newsprint */
-  filter: contrast(1.06) brightness(0.98);
-  transition: transform 0.8s var(--ease-out-expo);
-}
-
 /* Gate Content Structure */
 .gate-inner {
   position: relative;
@@ -271,47 +250,123 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  min-height: 0;
 }
 
 .gate-topbar {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(25, 23, 19, 0.15);
-  padding: 18px var(--gut);
+  padding: clamp(14px, 2vh, 20px) var(--gut);
   background-color: rgba(228, 223, 213, 0.5);
   backdrop-filter: blur(4px);
 }
 
+.gate-brand {
+  font-size: clamp(18px, 1.4vw, 24px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--color-ink);
+}
+
+.gate-meta {
+  font-size: clamp(12.5px, 0.95vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .gate-main {
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(14px, 2.8vh, 36px) var(--gut);
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 4;
+}
+
+/* Two-column Gate Grid (Matching Hero Section Ratio) */
+.gate-grid {
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  align-items: center;
+  gap: clamp(32px, 4.5vw, 76px);
+  width: 100%;
+}
+
+.gate-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(16px, 3.5vw, 40px) var(--gut);
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
+}
+
+.gate-tag {
+  font-size: clamp(12.5px, 0.95vw, 14.5px);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  align-self: flex-start;
 }
 
 .gate-quote-box {
-  max-width: 17ch;
+  margin-top: clamp(12px, 2.2vh, 22px);
+  max-width: 100%;
 }
 
 .gate-subtitle {
-  margin-top: clamp(16px, 2vw, 24px);
-  max-width: 42ch;
-  font-size: clamp(14.5px, 1.35vw, 17.5px);
-  line-height: 1.6;
+  margin-top: clamp(16px, 2.4vh, 26px);
+  max-width: 52ch;
+  font-size: clamp(16.5px, 1.35vw, 21px);
+  line-height: 1.55;
   color: var(--color-ink-soft);
+}
+
+/* Gate Portrait Column & Frame (Large & Centered) */
+.gate-portrait-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.gate-portrait-frame {
+  position: relative;
+  width: 100%;
+  max-width: clamp(340px, 36vw, 520px);
+  height: clamp(340px, 60vh, 580px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gate-portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  mix-blend-mode: multiply; /* Seamlessly blends drawing into newsprint */
+  filter: contrast(1.06) brightness(0.98);
+  transition: transform 0.8s var(--ease-out-expo);
 }
 
 /* ==========================================================================
    THE SIGNATURE "MY WORK" RED HOVER BUTTON
    ========================================================================== */
 .gate-actions-row {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
   border-top: 1px solid rgba(25, 23, 19, 0.15);
   background-color: #E4DFD5;
+  width: 100%;
 }
 
 .my-work-gate-btn {
@@ -320,8 +375,8 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: clamp(16px, 2.4vw, 36px);
-  padding: clamp(20px, 2.5vw, 32px) clamp(24px, 4vw, 60px);
+  gap: clamp(14px, 2vw, 32px);
+  padding: clamp(14px, 1.8vh, 24px) clamp(20px, 4vw, 60px);
   text-align: left;
   background: transparent;
   border: none;
@@ -350,9 +405,9 @@ h1, h2, h3, h4 {
 /* Number 01 */
 .my-work-gate-btn .btn-number {
   font-family: var(--font-mono);
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: clamp(15px, 1.25vw, 19px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
   color: var(--color-accent);
   transition: color 0.4s ease;
 }
@@ -365,7 +420,7 @@ h1, h2, h3, h4 {
 /* Title & Subtitle */
 .my-work-gate-btn .btn-title {
   font-family: var(--font-display);
-  font-size: clamp(24px, 3.2vw, 42px);
+  font-size: clamp(24px, min(3.8vw, 4.8vh), 42px);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -375,11 +430,11 @@ h1, h2, h3, h4 {
 
 .my-work-gate-btn .btn-desc {
   display: block;
-  margin-top: 6px;
-  font-size: 14.5px;
+  margin-top: 5px;
+  font-size: clamp(13.5px, 1.15vw, 16px);
   color: var(--color-ink-soft);
-  max-width: 60ch;
-  line-height: 1.45;
+  max-width: 65ch;
+  line-height: 1.4;
   transition: color 0.4s ease;
 }
 
@@ -395,8 +450,8 @@ h1, h2, h3, h4 {
 
 /* Arrow circle */
 .my-work-gate-btn .btn-arrow-circle {
-  width: 46px;
-  height: 46px;
+  width: clamp(42px, 5vh, 50px);
+  height: clamp(42px, 5vh, 50px);
   border-radius: 50%;
   border: 1px solid rgba(25, 23, 19, 0.25);
   display: flex;
@@ -404,11 +459,12 @@ h1, h2, h3, h4 {
   justify-content: center;
   transition: all 0.4s var(--ease-out-expo);
   color: var(--color-ink);
+  flex-shrink: 0;
 }
 
 .my-work-gate-btn .btn-arrow-circle svg {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   stroke-width: 2;
   transition: transform 0.4s var(--ease-out-expo), stroke 0.4s ease;
 }
@@ -2385,23 +2441,149 @@ h1, h2, h3, h4 {
   }
 }
 
-@media (max-width: 768px) {
-  .gate-portrait-wrap {
-    position: static;
-    order: 2;
-    margin: 16px auto 0;
-    height: auto;
-    max-height: 38vh;
-    width: 100%;
-    max-width: 300px;
+/* Responsive adjustments for shorter viewport heights (laptops, scaled displays) */
+@media (max-height: 850px) {
+  .gate-topbar {
+    padding: 10px var(--gut);
   }
-  
   .gate-main {
-    order: 1;
-    padding: 16px var(--gut);
-    justify-content: flex-start;
+    padding: 8px var(--gut);
+  }
+  .t-gate {
+    font-size: clamp(38px, 8.4vh, 80px);
+    line-height: 0.94;
+  }
+  .gate-quote-box {
+    margin-top: 8px;
+    max-width: 100%;
+  }
+  .gate-subtitle {
+    margin-top: 10px;
+    font-size: clamp(15px, 1.25vw, 18px);
+    line-height: 1.45;
+    max-width: 50ch;
+  }
+  .gate-portrait-frame {
+    height: clamp(300px, 56vh, 480px);
+    max-width: clamp(300px, 36vw, 460px);
+  }
+  .my-work-gate-btn {
+    padding: 12px clamp(18px, 3.5vw, 45px);
+  }
+  .my-work-gate-btn .btn-title {
+    font-size: clamp(22px, 4vh, 34px);
+  }
+  .my-work-gate-btn .btn-desc {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+}
+
+@media (max-height: 700px) {
+  .gate-topbar {
+    padding: 10px var(--gut);
+  }
+  .gate-main {
+    padding: 8px var(--gut);
+  }
+  .t-gate {
+    font-size: clamp(36px, 8.2vh, 66px);
+    line-height: 0.95;
+  }
+  .gate-subtitle {
+    margin-top: 8px;
+    font-size: 14.5px;
+    line-height: 1.4;
+    max-width: 46ch;
+  }
+  .gate-portrait-frame {
+    height: clamp(260px, 54vh, 420px);
+    max-width: clamp(280px, 34vw, 420px);
+  }
+  .my-work-gate-btn {
+    padding: 10px clamp(16px, 3vw, 36px);
+  }
+  .my-work-gate-btn .btn-title {
+    font-size: clamp(20px, 3.8vh, 30px);
+  }
+  .my-work-gate-btn .btn-arrow-circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-height: 520px) {
+  .gate-root {
+    overflow-y: auto;
+  }
+  .gate-inner {
+    min-height: 100%;
+    height: auto;
+  }
+  .gate-portrait-col {
+    display: none;
+  }
+  .my-work-gate-btn .btn-desc {
+    display: none;
+  }
+  .gate-topbar {
+    padding: 8px var(--gut);
+  }
+  .my-work-gate-btn {
+    padding: 8px var(--gut);
+  }
+}
+
+@media (max-width: 960px) {
+  .gate-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: left;
   }
   
+  .gate-portrait-col {
+    order: 2;
+  }
+  
+  .gate-portrait-frame {
+    height: auto;
+    max-height: 26vh;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .gate-content {
+    order: 1;
+  }
+
+  .gate-quote-box {
+    max-width: 100%;
+  }
+
+  .my-work-gate-btn {
+    padding: 12px var(--gut);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .t-gate {
+    font-size: clamp(26px, 7.8vw, 36px) !important;
+    line-height: 1.02;
+  }
+  
+  .gate-subtitle {
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+  
+  .gate-portrait-frame {
+    max-height: 22vh;
+    max-width: 190px;
+  }
+}
+
+@media (max-width: 768px) {
   .hero-metrics-strip {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2415,8 +2597,6 @@ h1, h2, h3, h4 {
   .metric-cell:nth-child(4) {
     border-top: 1px solid var(--color-rule);
   }
-  
-  
   
   .nav-links .nav-link {
     display: none;
@@ -2438,8 +2618,14 @@ h1, h2, h3, h4 {
     grid-column: span 1;
   }
   
+  .gate-portrait-wrap {
+    height: 35vh;
+    max-height: 250px;
+    opacity: 0.28;
+  }
+  
   .my-work-gate-btn {
-    padding: 18px var(--gut);
+    padding: 12px var(--gut);
   }
   
   .my-work-gate-btn .btn-desc {
