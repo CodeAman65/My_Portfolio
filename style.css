@@ -1591,6 +1591,81 @@ h1, h2, h3, h4 {
   75% { fill: #BB3F0E; }
 }
 
+/* --------------------------------------------------------------------------
+   MICRO-ANIMATION 9: AFTER EFFECTS (Keyframe Graph & Motion Tracker)
+   -------------------------------------------------------------------------- */
+.ae-kf-1 {
+  animation: ae-kf1-pulse 3.2s ease-in-out infinite;
+  transform-origin: 0 0;
+}
+
+.ae-kf-2 {
+  animation: ae-kf2-pulse 3.2s ease-in-out infinite;
+  transform-origin: 0 0;
+}
+
+.ae-handle-circle-1 {
+  animation: ae-h1-shift 3.2s ease-in-out infinite;
+  transform-origin: 88px 76px;
+}
+
+.ae-handle-circle-2 {
+  animation: ae-h2-shift 3.2s ease-in-out infinite;
+  transform-origin: 152px 42px;
+}
+
+.ae-tracker {
+  filter: drop-shadow(0 2px 4px rgba(187, 63, 14, 0.35));
+}
+
+@keyframes ae-kf1-pulse {
+  0%, 15% {
+    transform: scale(1.35);
+    fill: #B4D4CB;
+  }
+  25%, 85% {
+    transform: scale(1);
+    fill: #138A6B;
+  }
+  92%, 100% {
+    transform: scale(1.35);
+    fill: #B4D4CB;
+  }
+}
+
+@keyframes ae-kf2-pulse {
+  0%, 65% {
+    transform: scale(1);
+    fill: #BB3F0E;
+  }
+  72%, 88% {
+    transform: scale(1.4);
+    fill: #D0745A;
+  }
+  95%, 100% {
+    transform: scale(1);
+    fill: #BB3F0E;
+  }
+}
+
+@keyframes ae-h1-shift {
+  0%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.35);
+  }
+}
+
+@keyframes ae-h2-shift {
+  0%, 100% {
+    transform: scale(1);
+  }
+  40%, 80% {
+    transform: scale(1.35);
+  }
+}
+
 /* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
   .anim-playhead-group,
@@ -1603,7 +1678,12 @@ h1, h2, h3, h4 {
   .sub-word,
   .anim-slider-group,
   .story-curve-line,
-  .ai-tile {
+  .ai-tile,
+  .ae-kf-1,
+  .ae-kf-2,
+  .ae-handle-circle-1,
+  .ae-handle-circle-2,
+  .ae-tracker {
     animation: none !important;
   }
 }

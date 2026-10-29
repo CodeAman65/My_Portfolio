@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet (versioned to avoid browser caching) -->
-  <link rel="stylesheet" href="./style.css?v=4.2" />
+  <link rel="stylesheet" href="./style.css?v=4.3" />
 
   <!-- Critical Grid Layouts for Skills & Services (ensures side-by-side 3-column layout) -->
   <style>
@@ -542,7 +542,7 @@
           <div style="display: flex; align-items: baseline; gap: 16px;">
             <span class="tag">My Skills &amp; Toolkit</span>
             <span class="skills-header-rule"></span>
-            <span class="font-mono" style="font-size: 11px; color: #5A6B66;">08 Disciplines</span>
+            <span class="font-mono" style="font-size: 11px; color: #5A6B66;">09 Disciplines</span>
           </div>
 
           <h2 class="t-section" style="margin-top: 18px; max-width: 26ch;">
@@ -552,7 +552,74 @@
 
         <div class="skills-grid">
 
-          <!-- Card 1: Editing -->
+          <!-- Card 1: After Effects -->
+          <article class="skill-card">
+            <div class="skill-preview-panel">
+              <svg viewBox="0 0 240 120" class="skill-svg" aria-label="After Effects keyframing and graph editor animation">
+                <!-- Ae Badge & Meta Labels -->
+                <rect x="28" y="16" width="22" height="15" rx="3.5" fill="#0D1B1A" />
+                <text x="39" y="27.5" font-family="'DM Mono', monospace" font-size="9.5" font-weight="700" fill="#B4D4CB" text-anchor="middle">Ae</text>
+                <text x="56" y="27.5" font-family="'DM Mono', monospace" font-size="10.5" font-weight="600" fill="#138A6B">KEYFRAME EASE</text>
+                <text x="212" y="27.5" font-family="'DM Mono', monospace" font-size="10.5" font-weight="700" fill="#BB3F0E" text-anchor="end">F9 ◆</text>
+
+                <!-- Baseline Timeline Grid -->
+                <line x1="28" y1="90" x2="212" y2="90" stroke="#CFDCD5" stroke-width="1.2" stroke-linecap="round" />
+                <line x1="48" y1="87" x2="48" y2="93" stroke="#CFDCD5" stroke-width="1.2" />
+                <line x1="120" y1="87" x2="120" y2="93" stroke="#CFDCD5" stroke-width="1.2" />
+                <line x1="192" y1="87" x2="192" y2="93" stroke="#CFDCD5" stroke-width="1.2" />
+                <text x="28" y="103" font-family="'DM Mono', monospace" font-size="9.5" fill="#5A6B66">00:00</text>
+                <text x="120" y="103" font-family="'DM Mono', monospace" font-size="9.5" fill="#5A6B66" text-anchor="middle">GRAPH EDITOR</text>
+                <text x="212" y="103" font-family="'DM Mono', monospace" font-size="9.5" fill="#5A6B66" text-anchor="end">01:00</text>
+
+                <!-- Faint Guide Curve -->
+                <path d="M 48 76 C 96 76, 144 42, 192 42" fill="none" stroke="#138A6B" stroke-width="2.6" stroke-linecap="round" opacity="0.22" />
+
+                <!-- Tangent Handle Bars (After Effects Graph Editor) -->
+                <g class="ae-handles-group">
+                  <line x1="48" y1="76" x2="88" y2="76" stroke="#5A6B66" stroke-width="1.2" stroke-dasharray="2 2" />
+                  <circle class="ae-handle-circle-1" cx="88" cy="76" r="3.2" fill="#B4D4CB" stroke="#138A6B" stroke-width="1.4" />
+                  <line x1="192" y1="42" x2="152" y2="42" stroke="#5A6B66" stroke-width="1.2" stroke-dasharray="2 2" />
+                  <circle class="ae-handle-circle-2" cx="152" cy="42" r="3.2" fill="#DCCBC0" stroke="#BB3F0E" stroke-width="1.4" />
+                </g>
+
+                <!-- Active Bezier Curve -->
+                <path class="ae-bezier-curve" d="M 48 76 C 96 76, 144 42, 192 42" fill="none" stroke="#138A6B" stroke-width="2.6" stroke-linecap="round" />
+
+                <!-- Keyframe 1 Diamond (Start) -->
+                <g transform="translate(48, 76)">
+                  <polygon class="ae-diamond ae-kf-1" points="0,-6 6,0 0,6 -6,0" fill="#138A6B" stroke="#0D1B1A" stroke-width="1.2" />
+                </g>
+
+                <!-- Keyframe 2 Diamond (End) -->
+                <g transform="translate(192, 42)">
+                  <polygon class="ae-diamond ae-kf-2" points="0,-6 6,0 0,6 -6,0" fill="#BB3F0E" stroke="#0D1B1A" stroke-width="1.2" />
+                </g>
+
+                <!-- Motion Tracking Crosshair Traveling On Curve -->
+                <g class="ae-tracker">
+                  <animateMotion 
+                    path="M 48 76 C 96 76, 144 42, 192 42" 
+                    dur="3.2s" 
+                    repeatCount="indefinite" 
+                    keyPoints="0; 0.15; 0.85; 1; 1"
+                    keyTimes="0; 0.2; 0.7; 0.9; 1"
+                    calcMode="spline"
+                    keySplines="0.4 0 0.2 1; 0.25 0.1 0.25 1; 0.4 0 0.2 1; 0 0 1 1"
+                  />
+                  <circle r="7.5" fill="rgba(225, 235, 230, 0.4)" stroke="#BB3F0E" stroke-width="1.5" stroke-dasharray="2 1.5" />
+                  <circle r="2" fill="#0D1B1A" />
+                  <line x1="-10" y1="0" x2="-4" y2="0" stroke="#BB3F0E" stroke-width="1.2" />
+                  <line x1="4" y1="0" x2="10" y2="0" stroke="#BB3F0E" stroke-width="1.2" />
+                  <line x1="0" y1="-10" x2="0" y2="-4" stroke="#BB3F0E" stroke-width="1.2" />
+                  <line x1="0" y1="4" x2="0" y2="10" stroke="#BB3F0E" stroke-width="1.2" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="skill-title">After Effects</h3>
+            <p class="skill-desc">Dynamic keyframing, motion tracking, and visual effects compositing.</p>
+          </article>
+
+          <!-- Card 2: Editing -->
           <article class="skill-card">
             <div class="skill-preview-panel">
               <svg viewBox="0 0 240 120" class="skill-svg" aria-label="Editing timeline micro-animation">
